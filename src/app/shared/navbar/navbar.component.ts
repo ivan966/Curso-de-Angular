@@ -1,15 +1,20 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
+import { RegistroComponent } from 'src/app/core/components/registro/registro.component';
 
 @Component({
   selector: 'pro-navbar',
   templateUrl: './navbar.component.html',
   styleUrls: ['./navbar.component.scss']
 })
-export class NavbarComponent implements OnInit {
+export class NavbarComponent {
 
-  constructor() { }
+  constructor(public registroF: MatDialog) { }
 
-  ngOnInit(): void {
+  Registro(){
+    this.registroF.open(RegistroComponent, {
+      width: '30%',
+    })
   }
 
 }

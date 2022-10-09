@@ -1,1 +1,48 @@
-<p>registro works!</p>
+<h1 mat-dialog-title>Registro de Cliente</h1>
+<div mat-dialog-content>
+
+   <form [formGroup]="registroForm">
+    <mat-form-field appearance="outline">
+        <mat-label>Nombre</mat-label>
+        <input formControlName="Nombre" type="text" matInput placeholder="Ingresa tu nombre">
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+        <mat-label>Apellido</mat-label>
+        <input formControlName="Apellido" type="text" matInput placeholder="Ingresa tu apellido">
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+        <mat-label>Email</mat-label>
+        <input formControlName="Email" type="email" matInput placeholder="Ingresa tu correo">
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+        <mat-label>DNI</mat-label>
+        <input formControlName="DNI" type="text" inputmode="numeric" matInput placeholder="Ingresa tu Nº de Documento">
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+        <mat-label>Fecha de Nacimiento</mat-label>
+        <input formControlName="FechaNac" matInput [matDatepicker]="picker">
+        <mat-hint>MM/DD/YYYY</mat-hint>
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+      </mat-form-field>
+      
+
+    <mat-form-field appearance="outline">
+        <mat-label>Telefono</mat-label>
+        <input formControlName="Telefono" type="number" inputmode="numeric" matInput placeholder="Ingresa tu numero de telefono">
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+        <mat-label>Direccion</mat-label>
+        <input formControlName="Direccion" matInput placeholder="Ingresa tu Direccion">
+    </mat-form-field>
+   </form> 
+</div>
+<div nat-dialog-action [align]="'end'">
+    <button mat-raised-button color="warn" mat-dialog-close>Cerrar</button>
+    <button style="margin-left: 5px;" mat-raised-button color="primary" (click)="Registro()">{{actionBtn}}</button>
+</div>

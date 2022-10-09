@@ -1,0 +1,74 @@
+{
+  "ListaClientes": [
+    {
+      "Nombre": "asd",
+      "Apellido": "asd",
+      "Email": "asd",
+      "DNI": "asd",
+      "FechaNac": "4564-01-01T00:00:00.000Z",
+      "Telefono": 123,
+      "Direccion": "asd",
+      "id": 3
+    },
+    {
+      "Nombre": "sad",
+      "Apellido": "asd",
+      "Email": "asd",
+      "DNI": "asd",
+      "FechaNac": "0123-01-01T03:53:48.000Z",
+      "Telefono": 123,
+      "Direccion": "asd",
+      "id": 4
+    },
+    {
+      "Nombre": "ivan",
+      "Apellido": "como",
+      "Email": "estas",
+      "DNI": "4545",
+      "FechaNac": "4545-01-01T00:00:00.000Z",
+      "Telefono": 5445,
+      "Direccion": "asdasd",
+      "id": 5
+    },
+    {
+      "Nombre": "ivn",
+      "Apellido": "asd",
+      "Email": "asd",
+      "DNI": "ads",
+      "FechaNac": "0798-01-01T03:53:48.000Z",
+      "Telefono": 64654,
+      "Direccion": "asdasd",
+      "id": 6
+    },
+    {
+      "Nombre": "sofia",
+      "Apellido": "como",
+      "Email": "estas",
+      "DNI": "4545",
+      "FechaNac": "4545-01-01T00:00:00.000Z",
+      "Telefono": 5445,
+      "Direccion": "asdasd",
+      "id": 7
+    },
+    {
+      "Nombre": "felipe",
+      "Apellido": "asd",
+      "Email": "asdf",
+      "DNI": "a123",
+      "FechaNac": "0123-01-01T03:53:48.000Z",
+      "Telefono": 132,
+      "Direccion": "13123",
+      "id": 8
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

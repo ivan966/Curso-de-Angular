@@ -6,6 +6,9 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { sharedMudole } from './shared/shared.module';
 import { componentsModule } from './core/components/components.module';
+import { HttpClientModule } from '@angular/common/http';
+import { CommonModule } from '@angular/common';
+
 
 
 
@@ -19,6 +22,8 @@ import { componentsModule } from './core/components/components.module';
     BrowserAnimationsModule,
     sharedMudole,
     componentsModule,
+    HttpClientModule,
+    CommonModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
